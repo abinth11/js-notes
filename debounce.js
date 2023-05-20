@@ -8,8 +8,6 @@ function debounce(func, delay) {
     clearTimeout(timerId);
 
     timerId = setTimeout(() => {
-      console.log(this)
-      console.log(args)
       func.apply(this, args);
     }, delay);
   };
