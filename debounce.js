@@ -13,4 +13,8 @@ function debounce(func, delay) {
   };
 }
 
+const result = async ()=>{
+  console.log('async')
+}
+
 const debouncedFetchData = debounce(fetchData, 300);
